@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+*{  
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.codeArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.taskArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.addTaskButton{
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 1s;
+}
+
+.addTaskButton:hover{
+    background-color: rgb(83, 162, 89);
+    color: white;
+    width: 220px;
+}
+
+.taskSelection{
+    width: 0px;
+    padding: 10px;
+    height: fit-content;
+    border: dashed 1px white;
+    border-radius: 10px;
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transform: scale(0);
+    transition:  width 0.8s ease, transform 0.8s ease;
+}
+
+.taskSelection button{
+    background-color: blueviolet;
+    height: 30px;
+    width: 200px;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskSelection button:hover{
+    background-color: rgb(157, 95, 215);
+    width: 250px;
+    color: aliceblue;
+}
+
+

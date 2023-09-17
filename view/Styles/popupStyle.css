@@ -2,16 +2,12 @@
 .popupOptions {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    top: 10vh;
+    left: 25vw;
+    min-width: 40%;
+    min-height: 30%;
+    background-color: rgb(255, 255, 255);
     z-index: 1000;
-    border-radius: 10px;
-    transition: transform 0.8s ease;
 }
 
 .popupOptions span{
@@ -25,6 +21,7 @@
     background-color: aliceblue;
     border-radius: 50%;
     transition: 0.5s;
+    margin: 5px;
 }
 
 .popupOptions span img:hover{
@@ -40,6 +37,19 @@
 }
 .mouseOptions input{
     width: 30px;
+}
+.mouseOptions button{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(122, 163, 176);
+    font-weight: 900;
+    cursor: pointer;
+    transition: 1s;
+}
+.mouseOptions button:hover{
+    width: 50px;
 }
 
 .screenShootOptions{
@@ -91,4 +101,15 @@
     justify-content: center;
     cursor: pointer;
     outline: 1px solid white;
+}
+
+.closeUP{
+    width: 100%;
+    background-color: rgb(177, 145, 152);
+}
+
+.popupContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
